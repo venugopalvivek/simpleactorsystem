@@ -43,6 +43,12 @@ public class EntryPoint {
             System.out.println(e.getMessage());
         }
 
+        try {
+            actorSystem.sendMessage(new Message("print", "1234", 1000 + ""));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
         actorSystem.shutDown();
 
     }

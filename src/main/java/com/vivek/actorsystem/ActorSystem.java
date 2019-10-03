@@ -5,7 +5,6 @@ import com.vivek.actorsystem.actor.ActorState;
 import com.vivek.actorsystem.actor.impl.LogActor;
 import com.vivek.actorsystem.message.Message;
 
-import java.nio.charset.Charset;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,7 +18,6 @@ public class ActorSystem {
 
     private List<Actor> actors;
     private ExecutorService executorService;
-    private boolean shutdown;
 
     public ActorSystem() {
         actors = new LinkedList<>();
